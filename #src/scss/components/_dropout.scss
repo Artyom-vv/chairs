@@ -1,0 +1,35 @@
+.dropout {
+	appearance: none;
+	@include standart-transition;
+	height: $normal-dropout-height;
+	width: inherit;
+	font-size: 16px;
+	position: relative;
+	color: $title-color;
+	font-weight: 500;
+
+	&_without-bg {
+		background: transparent;
+		border: none;
+		border-radius: none;
+	}
+
+	border-radius: $radius;
+	cursor: pointer;
+	border: 1px solid #E7EAEF;
+	padding-left: 30px;
+}
+
+.dropout-label {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'inter', sans-serif;
+	color: #959AAE;
+	padding: 7px;
+	background-color: $gradation100;
+	position: absolute;
+	left: 22px;
+	top: 0;
+	transform: translateY(-50%);
+	z-index: 2;
+}

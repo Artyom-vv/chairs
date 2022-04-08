@@ -1,0 +1,74 @@
+.btn {
+	border-radius: $radius;
+	@include transition-all;
+	font-family: 'inter', sans-serif;
+	font-size: 18px;
+	line-height: 1.23em;
+	font-weight: 600;
+
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: nowrap;
+
+	background-color: $btn-color;
+	color: $gradation100;
+
+	&_big {
+		height: $big-btn-height;
+		padding: $big-btn-padding;
+	}
+
+	&_normal {
+		height: $normal-btn-height;
+		padding: $normal-btn-padding;
+	}
+
+	&_small {
+		height: $small-btn-height;
+		padding: $small-btn-padding;
+	}
+
+	&_gray {
+		height: 68px;
+		width: 100%;
+		max-width: 345px;
+		justify-content: center;
+		background-color: $gradation300;
+		color: $load-btn-color;
+		font-weight: 500;
+
+		&:hover {
+			background-color: $load-btn-hover;
+		}
+	}
+	&_black {
+		height: 47px;
+		align-items: center;
+		background-color: $title-color;
+		color: $gradation100;
+		padding: 0px 30px 0px 24px;
+		border-top-left-radius: 0px;
+	}
+
+	&_arrow {
+		background-color: $gradation100;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		@include blue-shadow;
+		border: 1px solid $btn-circle-border;
+	
+		&:hover {
+			border-color: $btn-circle-border-hover;
+		}
+		&-right {
+			img {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}

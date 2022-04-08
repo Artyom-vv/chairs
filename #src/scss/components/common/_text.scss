@@ -1,0 +1,106 @@
+// BUTTONS
+.b1,
+.b2,
+.b3 {
+	font-family: 'inter', sans-serif;
+	font-weight: 700;
+	line-height: 1.4em;
+}
+
+.b1 {
+	font-size: 19px;
+}
+
+.b2 {
+	font-size: 17px;
+}
+
+.b3 {
+	font-size: 15px;
+}
+
+// PARAGRAPHS
+.p1,
+.p2,
+.p3,
+.c1 {
+	color: $gradation700;
+	font-family: 'inter', sans-serif;
+	font-weight: 400;
+	line-height: 1.4em;
+}
+
+.p1 {
+	font-size: 19px;
+}
+
+.p2 {
+	font-size: 17px;
+}
+
+.p3 {
+	font-size: 15px;
+}
+
+// CAPTION
+.c1 {
+	font-size: 13px;
+}
+
+// LABEL
+.l1 {
+	font-size: 12px;
+	font-weight: 700;
+	font-family: 'inter', sans-serif;
+	line-height: 1.4em;
+}
+
+.subtitle {
+	line-height: 1.6em;
+	font-size: 21px;
+	color: $gradation800;
+	font-family: 'inter', sans-serif;
+	font-weight: 400;
+}
+
+.center {
+	text-align: center;
+}
+
+.price {
+	letter-spacing: -0.05em;
+	font-size: 28px;
+	font-family: 'inter', sans-serif;
+	font-weight: 900;
+	position: relative;
+	display: inline-block;
+	padding-right: 0.85em;
+
+	&::after {
+		content: "₽";
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+	}
+
+	&_old {
+		font-size: 20px;
+		overflow: hidden;
+		font-weight: 700;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: calc(100% * 2);
+			height: calc(80% * 2);
+			border: 0.16em solid #F54D35;
+			border-radius: 50%;
+			bottom: 0;
+			transform: translateY(55%) translateX(-10%);
+			left: 0;
+			z-index: 3;
+		}
+	}
+}

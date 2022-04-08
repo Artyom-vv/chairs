@@ -1,0 +1,45 @@
+@import './vars';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+.container {
+	padding: 0px 15px;
+	max-width: 1202px;
+	margin: 0 auto;
+}
+
+// COMPONTENTS:
+// TITLE
+@import './components/common/titles';
+// TEXT
+@import './components/common/text';
+// INPUTS
+@import './components/input';
+// BUTTONS
+@import './components/buttons';
+// ICONS
+@import './components/common/icon';
+// TABS
+@import './components/tabs';
+// BADGES
+@import './components/common/badges';
+// BOX
+@import './components/box';
+// COLUMNS
+@import './components/columns';
+// LIST
+@import './components/list';
+// DROPOUT
+@import './components/dropout';
+// INFO
+@import './components/info';
+// SLIDER
+@import './components/slider';

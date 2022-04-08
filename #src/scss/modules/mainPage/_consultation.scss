@@ -1,0 +1,82 @@
+.consultation {
+	position: absolute;
+	min-height: 533px;
+	width: 100%;
+
+	top: 0;
+	right: 0;
+
+	transform: translateY(-50%);
+
+	&__container {
+		position: relative;
+		min-height: inherit
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1800px;
+		width: 100%;
+	}
+
+	&__img {
+		position: absolute;
+		bottom: 0px;
+		right: -90px;
+		min-height: 571px;
+		z-index: 1;
+	}
+
+	&__offer {
+		min-height: 533px;
+		position: relative;
+		z-index: 5;
+	}
+
+	&__form {
+		gap: 18px;
+	}
+
+	&__btn {
+		width: 100%;
+		justify-content: center;
+		max-width: 297px;
+	}
+
+	&__input-box {
+		max-width: 423px;
+
+		.icon {
+			&.left {
+				left: 36px;
+			}
+		}
+
+		.input {
+			caret-color: $gradation100;
+			color: $gradation100;
+			padding-left: 70px;
+			height: 100%;
+			background-color: $gradation700;
+			border-color: rgba(#fff, 0.3);
+
+			&::placeholder {
+				color: $gradation100;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__text {
+		max-width: 584px;
+		color: $gradation100;
+		font-weight: 300;
+		font-size: 26px;
+		line-height: 150%;
+		margin-top: 9px;
+		margin-bottom: 29px;
+	}
+}

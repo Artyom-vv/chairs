@@ -1,0 +1,45 @@
+.test-drive {
+	min-height: 513px;
+	margin-top: 70px;
+	margin-bottom: 96px;
+	position: relative;
+
+	&__container {
+		position: relative;
+		min-height: inherit
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1800px;
+		width: 100%;
+	}
+
+	&__btn {
+		@include blue-shadow;
+		margin-top: 31px;
+	}
+
+	&__img {
+		position: absolute;
+		bottom: 0px;
+		right: -110px;
+		min-height: 571px;
+		z-index: 1;
+	}
+
+	&__offer {
+		position: relative;
+		z-index: 2;
+		min-height: 513px;
+		max-width: 682px;
+	}
+
+	&__text {
+		max-width: 578px;
+		margin-top: 16px;
+	}
+}

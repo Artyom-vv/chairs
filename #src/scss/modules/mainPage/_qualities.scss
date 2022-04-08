@@ -1,0 +1,11 @@
+@import './qualities-item';
+
+.qualities {
+	padding-top: 98px;
+	padding-bottom: 92px;
+
+	// .qualities__container
+	&__container {
+		gap: 68px;
+	}
+}

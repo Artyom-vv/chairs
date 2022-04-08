@@ -1,0 +1,17 @@
+.icon {
+	width: $icon-size;
+	height: $icon-size;
+
+	&_16 {
+		height: $icon-size-2;
+		width: $icon-size-2;
+	}
+	&_20 {
+		height: 20px;
+		width: 20px;
+	}
+	&_arrow {
+		height: 22px;
+		width: 16px;
+	}
+}

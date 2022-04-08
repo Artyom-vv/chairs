@@ -1,0 +1,71 @@
+.input {
+	background-color: $gradation200;
+	border: 1px solid $gradation400;
+	height: $normal-input-height;
+	padding: $normal-input-padding;
+
+	@include standart-transition;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+
+	font-family: 'inter', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 1.23em;
+	color: $input-color;
+
+	border-radius: $radius;
+	width: inherit;
+
+	caret-color: $title-color;
+
+	&::placeholder {
+		color: $title-color;
+		opacity: 30%;
+	}
+
+	&_icon {
+		padding: $normal-input-padding-icon;
+	}
+	
+	&_w100 {
+		max-width: 100%;
+	}
+
+	&:hover {
+		border-color: $input-color-hover;
+	}
+
+	&:focus {
+		color: $gradation900;
+		background-color: $gradation100;
+		border: none;
+		outline: 2px solid $input-color-active;
+		@include blue-shadow;
+
+	}
+
+	&:not(:placeholder-shown) {
+		color: $gradation900;
+		border-color: $input-color-hover;
+	}
+
+	&_error {
+		color: $gradation900;
+		border-color: $error-color;
+	}
+
+	&_success {
+		color: $gradation900;
+		border-color: $success-color;
+	}
+
+	&:disabled,
+	&:read-only {
+		border-color: $gradation400;
+		color: $input-color-hover;
+		background-color: $gradation100;
+	}
+}

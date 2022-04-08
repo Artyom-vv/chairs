@@ -1,0 +1,31 @@
+.footer {
+	background-color: #191E32;
+	padding: 66px 0;
+
+	.columns {
+		gap: 80px;
+	}
+
+	&__column,
+	&__list {
+		gap: 19px;
+	}
+
+	.list {
+		&__link {
+			color: #E7EAEF;
+			font-family: 'manrope', sans-serif;
+		}
+	}
+
+	&__text {
+		color: #959AAE;
+	}
+	&__column-one {
+		gap: 15px;
+	}
+	.texts {
+		gap: 6px;
+	}
+
+}
